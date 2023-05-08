@@ -1,0 +1,39 @@
+* {
+    flex-wrap: wrap;
+}
+
+#title {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 20px;
+  }
+
+#container-one {
+    border: solid;
+    margin: auto;
+    margin-top: 20px;
+    text-indent: 20px;
+}
+
+.future {
+    border: solid;
+    margin: auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: solid;
+    padding: 30px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+  
+
