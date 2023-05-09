@@ -2,6 +2,17 @@
     flex-wrap: wrap;
 }
 
+#history {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#history p {
+    background-color: aqua;
+    margin: 20px;
+    padding: 7px 14px;
+}
+
 #title {
     margin: auto;
     width: 50%;
