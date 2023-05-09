@@ -44,11 +44,11 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&ap
 }) .then (function (data) {
     // var dayTwo = document.getElementById("weathericon2");
     // dayTwo.src =  `https://openweathermap.org/img/wn/${data.list[8].weather[0].icon}.png`;
-console.log(data.main.temp)
-var date6 = document.getElementById('date6');
+// console.log(data.main.temp)
+// var date6 = document.getElementById('date6');
 // date6.textContent = new Date(data.list[0].dt_txt).toLocaleDateString();
 // var daySix = document.getElementById('temp6');
-date6.textContent = "Temperature: " + data.main.temp +  " Celsius"
+// date6.textContent = "Temperature: " + data.main.temp +  " Celsius"
 // var daySix = document.getElementById('hum6');
 // daySix.textContent = "Humidity: " + data.list[8].main.humidity;
 // var daySix = document.getElementById('wind6');
@@ -141,6 +141,17 @@ dayFive = document.getElementById("hum5");
 dayFive.textContent = "Humidity: " + data.list[32].main.humidity;
 dayFive = document.getElementById("wind5");
 dayFive.textContent = "Wind: " + data.list[32].wind.gust;
+
+var daySix = document.getElementById("weathericon6");
+daySix.src =  `https://openweathermap.org/img/wn/${data.list[39].weather[0].icon}.png`;
+var date6 = document.getElementById('date6');
+date6.textContent = new Date(data.list[39].dt_txt).toLocaleDateString();
+daySix = document.getElementById("temp6");
+daySix.textContent = "Temperature: " + data.list[39].main.temp +  " Celsius";
+daySix = document.getElementById("hum6");
+daySix.textContent = "Humidity: " + data.list[39].main.humidity;
+daySix = document.getElementById("wind6");
+daySix.textContent = "Wind: " + data.list[39].wind.gust;
 }
 
 
